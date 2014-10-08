@@ -1,317 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Landing Page template</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!--<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">-->
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
-    <link href="css/slider.css" rel="stylesheet">
-	</head>
-	<body>
-<div class="container-full">
 
-<div class="row">
-       <!--Logo-->
-        <div class="col-lg-12 text-center v-center">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Feeling Sexy - Track your Parcel</title>
+    <meta name="generator" content="Feeling Sexy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/bootstrapValidator.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="js/jspatch.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container-full">
+        <div class="cus-row-section">
             <div class="row">
-            <div class="logo">
-              <img src="img/FeelingSexy.png" class="" alt="Circular Image">
-            </div>
-          </div>
+                <!--Logo-->
+                <div class="logo">
+                    <img src="img/FeelingSexy.png" class="" alt="Circular Image">
+                </div>
 
-      <!--gift-icon-->
-          <div class="gifticon">
-              <img src="img/gift.png"  class="aboutlogo" alt="Circular Image">
-            </div>
-          
-          <h1>Order Tracking</h1>
-          <div class="row">
-            <div class="col-md-4 ">
-                                
-             </div>
-           <div class="col-md-4 ">
-                  <p class="lead">Please select either one of the choices from above,<br>
-                To track your Parcel.</p> 
-                <hr class="style-two";>             
-          </div>
-           <div class="col-md-4 ">
-                                
-          </div>
-          
-          </div>
-          <br>
-          
+                <div class="col-lg-12 text-center v-center">
+                    <div class="row">
 
-
-
-
-          <form class="col-lg-12">
-            <div class="row radio">
-                      <div class="col-md-3 ">
-                                
-                      </div>
-
-                        <div class=" col-md-2 emailtxt">
-                          <label>
-                            <input type="radio" name="radio1" id="radio1" value="option1">Email
-                          </label>
                     </div>
-
-                     <div class=" col-md-2 ">
-                          <label>
-                           <input type="radio" name="radio1" id="radio2" value="option2"> Tracking number
-                          </label>
+                    <!--gift-icon-->
+                    <div class="gifticon">
+                        <img src="img/gift.png" class="aboutlogo" alt="Circular Image">
                     </div>
-
-                    <div class=" col-md-2 invoicetxt">
-                          <label>
-                            <input type="radio" name="radio1" id="radio3" value="option3"> Invoice number
-                          </label>
+                    <h1>Order Tracking</h1>
+                    <div class="row">
+                        <div class="col-md-4 "></div>
+                        <div class="col-md-4 ">
+                            <p class="lead">Please select either one of the choices from above,
+                                <br>To track your Parcel.</p>
+                            <hr class="style-two" ;>
+                        </div>
+                        <div class="col-md-4"></div>
                     </div>
+                    <br>
+                    <form class=" form-horizontal col-lg-12" id="defaultForm" action="ajaxSubmit.php" method="post">
 
-                     <div class="col-md-3 ">
-                                
-                      </div>
-           </div>
-<br><br>
-           <div class="row">
-                   <div class="col-md-4 ">
-                                
-                         </div>
+                        <div class="container">
+                            <div class="row row-centered">
 
-                            <div class="col-md-3 trackbtnrow">
-                                <div class="form-group ">
-                                    <input type="text" class="form-control cus-txt" required="required" placeholder="Name">
+                                <div class="col-md-1 col-centered">
+                                    <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" />
+                                    <label for="radio1" class="css-label radGroup1 radGroup1">Email</label>
                                 </div>
-                            </div>
-                            <div class="col-md-2 trackbtntxt">
-                                <div class="form-group">
-                                    <button class="btn btn-lg btn-primary trackbtn" type="button">Track</button>
+
+
+                                <div class="col-md-2 col-centered">
+                                    <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" checked="checked" />
+                                    <label for="radio2" class="css-label radGroup1 radGroup1">Tracking Number</label>
                                 </div>
+
+
+                                <div class=" col-md-2 col-centered">
+                                    <input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" />
+                                    <label for="radio3" class="css-label radGroup1 radGroup1">Invoice Number</label>
+                                </div>
+
                             </div>
-                             <div class="col-md-2 ">
-                                
+
+                        </div>
+                        <!--container-->
+
+
+                        <br>
+                        <br>
+
+
+                        <div class="container">
+                            <div class="row row-centered">
+
+                                <div class="col-md-3 col-centered trackbtnrow">
+                                    <div class="form-group ">
+                                        <input type="text" class="form-control cus-txt" name="itemnumber" placeholder="LVG0115552010223">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-2 col-centered trackbtntxt">
+                                    <div>
+                                        <button class="btn btn-lg btn-primary trackbtn" type="submit">Track</button>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    <div class="row">
-                      <p>The question required and cannot be empty<p>
-                        <p>Recently Track: LVG0116814010227<p>
-                    </div>
 
-          </form>
-        </div>
-        
-      </div> <!-- /row -->
-  
-  	  <div class="row">
-       
-        <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
-          <a href="#"><i class="icon-google-plus"></i></a> <a href="#"><i class="icon-facebook"></i></a>  <a href="#"><i class="icon-twitter"></i></a> <a href="#"><i class="icon-github"></i></a> <a href="#"><i class="icon-pinterest"></i></a>
-        </div>
-      
-      </div>
-  
-  	<br><br><br><br><br>
+                    </form>
 
-</div> <!-- /container full -->
 
-<div class="container">
-  
-  	
-  
-  <div class="row">
-        
-      <div class="col-lg-12">
-        
-      
-        <div class="col-md-1 cuscol-md-1padding">
-          <div class="">
-            <div class="iconmark">
-              <img src="img/Checkmark.png" class="aboutlogo" alt="Circular Image">
-            </div>
-            <div class="">
-              <img src="img/Orderprocess/Icon1BW.png" class="aboutlogo" alt="Circular Image">
-            </div>
-            <div class="ordprocesstest">
-              <p> 1<span class="ordprocesstest-span";>Order Received</span></p>
-            </div>
 
-          </div>
+                </div>
+            </div>
+            <!--/row-->
         </div>
-        <div class="col-md-1 cuscol-md-1padding">
-          <div class="">
-            <div class="line">
-              <img src="img/line2.png" class="aboutlogo" alt="Circular Image">
+        <!--/-section 01-->
+        <div class="row">
+            <div class="col-lg-12 text-center v-center" style="font-size:39pt;"><a href="#"><i class="icon-google-plus"></i></a><a href="#"><i class="icon-facebook"></i></a><a href="#"><i class="icon-twitter"></i></a><a href="#"><i class="icon-github"></i></a><a href="#"><i class="icon-pinterest"></i></a>
             </div>
-            <div class="">
-            </div>
-          </div>
         </div>
-          <div class="col-md-1 cuscol-md-1padding">
-          <div class="">
-            <div class="iconmark">
-              <img src="img/Checkmark.png" class="aboutlogo" alt="Circular Image">
-            </div>
-            <div class="">
-              <img src="img/Orderprocess/Icon2BW.png" class="aboutlogo" alt="Circular Image">
-            </div>
-            <div class="ordprocesstest">
-              <p> 2<span class="ordprocesstest-span";>Packed and</span><span class="ordprocesstest-span1"> Dispatched</span></p>
-            </div>
-          </div>
-        </div>
-          <div class="col-md-1 cuscol-md-1padding">
-          <div class="">
-            <div class=""></div>
-            <div class="line">
-                <img src="img/line2.png" class="aboutlogo" alt="Circular Image">
-            </div>
-          </div>
-        </div>
-          <div class="col-md-1 cuscol-md-1padding">
-          <div class="">
-            <div class="iconmark">
-              <img src="img/Elipse.png" class="aboutlogo" alt="Circular Image">
-            </div>
-            <div class="">
-              <img src="img/Orderprocess/Icon3.png" class="aboutlogo" alt="Circular Image">
-            </div>
-            <div class="ordprocesstest">
-              <p> 3<span class="ordprocesstest-span";>In Transit</span></p>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-1 cuscol-md-1padding">
-          <div class="">
-            <div class=""></div>
-            <div class="line">
-                <img src="img/line2.png" class="aboutlogo" alt="Circular Image">
-            </div>
-          </div>
-        </div>
-         <div class="col-md-1 cuscol-md-1padding">
-          <div class="">
-              
-            <div style="padding-top:30px;">
-              <img src="img/Orderprocess/Icon4BW.png" class="aboutlogo" alt="Circular Image">
-            </div>
-            <div class="">
-
-            </div>
-            <div class="ordprocesstest">
-              <p> 4<span class="ordprocesstest-span";>Delivered</span></p>
-            </div>
-          </div>
-        </div>
- <div class="col-md-2">
-          <div class="col-md-2">
-          <div class="">
-            <div class=""></div>
-            <div class="">
-            </div>
-          </div>
-        </div>
-        </div>
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
-
-      </div>
-
-<!-- table-->
-<div class="row panel-bottom-line">
-
-        <div class="col-md-2 col-md-2cus">
-          <div class="">
-            
-          </div>
-        </div>
- <div class="col-lg-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-             <div class="row">
-              <div class="col-md-7">
-             <h3>Package Details - LVG0115552010223</h3>
-            
-          </div>
-
-          <div class="col-md-2 col-md-2cus">
-          
-            <button class="btn btn-lg btn-primary In-Transit-btn" type="button">In Transit</button>
-        
-         </div>
-             
-          </div>
-        </div>
-            <div class="panel-body">
+    <!--/container full-->
+    <div class="bgcolor">
+        <div class="container">
+            <div class="divcusrow">
                 <div class="row">
-                  <div class="col-md-3">
-                  <p class="panel-body-p-bold";>Email Address</p>
-                  <p class="panel-body-p-bold";>Invoice Number</p>
-                  <p class="panel-body-p-bold";>Service</p>
-                  </div>
-                  
+                    <!--<div class="col-lg-12">-->
+                    <!--<div class="col-md-2 col-md-2cusimg"><div class=""><div class=""></div><div class=""></div></div></div>-->
+                    <div class="col-md-1 cuscol-md-1padding col-md-1cus">
+                        <div class="">
+                            <div class="iconmark">
+                                <img src="img/Checkmark.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="">
+                                <img src="img/Orderprocess/Icon1BW.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="ordprocesstest">
+                                <p>1<span class="ordprocesstest-span">Order Received</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-2padding col-md-1cus">
+                        <div class="">
+                            <div class="line">
+                                <img src="img/line2.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-1padding col-md-1cus">
+                        <div class="">
+                            <div class="iconmark">
+                                <img src="img/Checkmark.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="">
+                                <img src="img/Orderprocess/Icon2BW.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="ordprocesstest">
+                                <p>2<span class="ordprocesstest-span">Packed and Dispatched</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-2padding col-md-1cus">
+                        <div class="">
+                            <div class=""></div>
+                            <div class="line">
+                                <img src="img/line2.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-1padding col-md-1cus">
+                        <div class="">
+                            <div class="iconmark">
+                                <img src="img/Elipse.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="">
+                                <img src="img/Orderprocess/Icon3.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class="ordprocesstest">
+                                <p>3<span class="ordprocesstest-span">In Transit</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-2padding col-md-1cus">
+                        <div class="">
+                            <div class=""></div>
+                            <div class="line">
+                                <img src="img/line2.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 cuscol-md-1padding col-md-1cus">
+                        <div class="">
+                            <div style="padding-top:30px;">
+                                <img src="img/Orderprocess/Icon4BW.png" class="aboutlogo" alt="Circular Image">
+                            </div>
+                            <div class=""></div>
+                            <div class="ordprocesstest">
+                                <p>4<span class="ordprocesstest-span">Delivered</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="col-md-2">
+                            <div class="">
+                                <div class=""></div>
+                                <div class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                    <!--col-lg-12-END"-->
+
+                </div>
+                <!--row-->
+            </div>
+            <!--divcusrow-->
+
+
+            <!-- table-->
+            <div class="row panel-bottom-line">
+
+                <div class="col-md-2 col-md-2cus">
+                    <div class="">
+
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h3>Package Details - LVG0115552010223</h3>
+
+                                </div>
+
+                                <div class="col-md-5 col-md-2cus">
+
+                                    <button class="btn btn-lg btn-primary In-Transit-btn" type="button">In Transit</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p class="panel-body-p-bold" ;>Email Address</p>
+                                    <p class="panel-body-p-bold" ;>Invoice Number</p>
+                                    <p class="panel-body-p-bold" ;>Service</p>
+                                </div>
+
+                                <!--<div class="col-md-1">
+                     
+                              </div>-->
+
+                                <div class="col-md-5 table5">
+                                    <p>andrewcolin@gmail.com</p>
+                                    <p>00001277</p>
+                                    <p>eParcel</p>
+                                </div>
+                                <!-- <div class="col-md-1">
+                              </div>-->
+                                <div class="col-md-4">
+                                    <p class="panel-body-p-bold" ;>Signature</p>
+                                    <img src="img/sign.png" class="aboutlogo img-responsive" alt="Circular Image">
+                                </div>
+
+                            </div>
+                            <h3 class="panel-heading1">More details - LVG0115552010223<h3>
+                            </div>
+                            <hr>
+                            <!--table02-->
+                            <div class="panel-body">
+                             <div class="row">
+                              <div class="col-md-3">
+                                <p class="panel-body-p-bold";>Date/Time  </p>
+                                <p>Thu 02 Oct 2014 08:47</p>
+                                <p>Tue 30 Sep 2014 17:55</p>
+                                <p>Tue 30 Sep 2014 17:25 </p>
+                              </div>
+                              
                   <!--<div class="col-md-1">
                      
-                 </div>-->
+                </div>-->
 
-                 <div class="col-md-5 table5">
-                  <p>andrewcolin@gmail.com</p>
-                  <p>00001277</p>
-                  <p>eParcel</p>
-                  </div>
-                  <!-- <div class="col-md-1">
-                                      </div>-->
-                 <div class="col-md-4">
-                  <p class="panel-body-p-bold";>Signature</p>
-                  <img src="img/sign.png" class="aboutlogo img-responsive" alt="Circular Image">
-                  </div>
-                
-            </div>
-           <h3 class="panel-heading1">More details - LVG0115552010223<h3>
-            </div>
-            <hr>
-  <!--table02-->
-             <div class="panel-body">
-                 <div class="row">
-                  <div class="col-md-3">
-                  <p class="panel-body-p-bold";>Date/Time  </p>
-                  <p>Thu 02 Oct 2014 08:47</p>
-                  <p>Tue 30 Sep 2014 17:55</p>
-                  <p>Tue 30 Sep 2014 17:25 </p>
-                  </div>
-                  
-                  <!--<div class="col-md-1">
-                     
-                 </div>-->
-
-                 <div class="col-md-5 table5">
+                <div class="col-md-5 table5">
                   <p class="panel-body-p-bold";>Activity   </p>
                   <p>Processed through Australia Post facility  </p>
                   <p>Processed through Australia Post facility  </p>
                   <p>Shipping information received by Australia Post</p>
-                  </div>
+                </div>
                   <!-- <div class="col-md-1">
-                                      </div>-->
-                 <div class="col-md-4">
-                  <p class="panel-body-p-bold ";>Location</p>
+                </div>-->
+                <div class="col-md-4">
+                  <p class="panel-body-p-bold";>Location</p>
                   <p>GAWLER SA</p>
                   <p>UNSHINE WEST VIC</p>
-                  </div>
+                </div>
                 
-            </div>
+              </div>
             </div>
           </div>
         </div>
 
 
- <div class="col-md-2 col-md-2cus">
+        <div class="col-md-2 col-md-2cus">
           <div class="">
             <div class=""></div>
             <div class="">
@@ -320,241 +318,283 @@
           </div>
         </div>
 
-</div>
-</div>
+      </div>
+    </div><!--container-->
+  </div><!--section01-->
 
 
+  <!-- Slider section -->
+  <div class="cusrowsection03">
+    <div class="container">
+     <h2 > Recent Products</h2>
 
-<!-- Slider section -->
-<div class="row cusrow">
-   <h2> Recent Products</h2>
-  <div class="col-md-2 col-md-2cus01">
+    <div class="row row-centered">
+      <section id="content" role="main">
+        
+        <article class="intro">
+          
           <div class="">
-            <div class=""></div>
-            <div class="">
-            </div>
-          </div>
+            
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    
+<!-- ITEM 1 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
         </div>
- <div class="col-md-9">
-  <section id="content" role="main">
-    
-    <article class="intro">
-  
-      <div class="">
-      
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-                <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                    <p><img class="img-thumbnail" src="img/items/2.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-                                   <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
-
-                                </div>
-                                
-  </div>
-
-   <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                    <p><img class="img-thumbnail" src="img/items/JOHNVARVATOS_PLATINUMEDITION_EDT125.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-                                    <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
-
-                                </div>
-                                
-  </div>
-                            <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                    <p><img class="img-thumbnail" src="img/items/LANVIN_ECLATDARPEGE_EDP100.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-                                    <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
-
-                                </div>
-                                
-  </div>
-   <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                    <p><img class="img-thumbnail" src="img/items/THIERRYMUGLER_ANGEL_EDP50.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-                                 <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
-
-                                </div>
-                                
-  </div>
-   <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                    <p><img class="img-thumbnail" src="img/items/bentley_bentleyazure_edt100.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-          <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
-
-                                </div>
-                                
-  </div>
+        <img src="/img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" width="165" height="165" alt="The One Sport Giftset" title="The One Sport Giftset">
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
             </div>
-            <div class="item">
-               <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                     <p><img class="img-thumbnail" src="img/items/2.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-                                   <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
-                                </div>
-                                
-  </div>
-                           <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                    <p><img class="img-thumbnail" src="img/items/bentley_bentleyazure_edt100.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-                                    <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+               
+<!-- ITEM 2 -->      
+               
+<div class="col-md-4 slidercustomrow item">
 
-                                </div>
-                                
-  </div>
-                          <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                    <p><img class="img-thumbnail" src="img/items/bentley_bentleyazure_edt100.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-                                  <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <img src="/img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" width="165" height="165" alt="The One Sport Giftset" title="The One Sport Giftset">
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
 
-                                </div>
-                                
-  </div>
-   <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                    <p><img class="img-thumbnail" src="img/items/bentley_bentleyazure_edt100.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-                                     <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
+               
+<!-- ITEM 3 -->      
+               
+<div class="col-md-4 slidercustomrow item">
 
-                                </div>
-                                
-  </div>
-   <div class="col-md-4 slidercustomrow item">
-                               
-                                  <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
-           <div class="ribbon-new"> On Sale</div>
-                                  </div>
-                                    <p><img class="img-thumbnail" src="img/items/THIERRYMUGLER_ANGEL_EDP50.jpg" height="120px" width="120px"></p>
-                                  
-        <div class="caption">
-                                    <div class="pstyleleft">
-                                     <p><b>Lorem Ipsum </b></p>
-                                     <p class="cus-p-style">100 ml Eau de Toilette</p>
-                                     <p>Price:<span class="span-p"> $82.95</span><p>
-                                     <p class="span-p1 cus-p2-style ";>Was: $87.95</p>
-                                   </div>
-                                      <button class="btn btn-lg btn-primary In-Transit-btn-black" type="button">More Info</button>
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <img src="/img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" width="165" height="165" alt="The One Sport Giftset" title="The One Sport Giftset">
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+               
+               
+<!-- ITEM 4 -->      
+               
+<div class="col-md-4 slidercustomrow item">
 
-                                </div>
-                                
-  </div>
-            </div> 
-          </div>
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <img src="/img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" width="165" height="165" alt="The One Sport Giftset" title="The One Sport Giftset">
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+             
+                    
+           </div>
+           
+                  
+<div class="item">
+               
+<!-- ITEM 5 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <img src="/img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" width="165" height="165" alt="The One Sport Giftset" title="The One Sport Giftset">
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+               
+<!-- ITEM 6 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <img src="/img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" width="165" height="165" alt="The One Sport Giftset" title="The One Sport Giftset">
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+
+               
+<!-- ITEM 7 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <img src="/img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" width="165" height="165" alt="The One Sport Giftset" title="The One Sport Giftset">
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+               
+               
+<!-- ITEM 8 -->      
+               
+<div class="col-md-4 slidercustomrow item">
+
+    <a class="thumbmale" style="margin-left: 0" href="the-one-sport-giftset-by-dolce-and-gabbana-300349/">
+        <div id="fsMainContents_rptWhatsnew_divnew_0" class="ribbon-wrapper-new">
+            <div class="ribbon-new">
+                New</div>
+        </div>
+        <img src="/img/products/allproducts/dolcegabbana_theonesport_giftset1.jpg" width="165" height="165" alt="The One Sport Giftset" title="The One Sport Giftset">
+        <br>
+        <div class="thumbdescription">
+            <div class=" thumbtitleindex">
+                The One Sport Giftset
+            </div>
+            <div class="clear" style="height: 10px;">
+            </div>
+            <div class="smpbg">
+                Eau de Toilette by Dolce And Gabbana
+            </div>
+            <div class="clear" style="height: 5px;">
+            </div>
+            <div class="thumbpriceindex">
+                <span class="smpbg">From: </span><span class="pricereg">$59.95</span>
+            </div>
+        </div>
+    </a>
+</div>
+             
           
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          </ol>
+               
+     </div> 
+   </div>
+   
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
 
-          <!-- Controls -->
-         <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="icon-prev pnicon"></span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="icon-next pnicon"></span>
-          </a>-->
+
         </div><!-- /.carousel -->  
 
       </div><!-- /.container -->  
@@ -563,6 +603,7 @@
   </section>
 </div>
 </div>
+</div><!--cusrowsection03-->
 
 
 </div>
@@ -572,144 +613,100 @@
 
 <!--Feeling Sexy Section-->
 <div class="feelsexy">
-<div class="container">
-<div class="row">
-  
-    <h1 class="feelsexy">Feeling Sexy</h1>
-    <h4>Hottest Fragrance Store in Southern Hemisphere<h4>
-      <button class="btn btn-lg btn-primary feelsexy-button" type="button">Visit Our Store</button>
-
-  </div>
-</div>
-</div>
-
-<!--Subcribe Section-->
-<div class="Subcribe">
-<div class="container">
-<div class="row">
-  
-    
-                  <div class="col-md-1">
-                  
-                  </div>
-                  <div class="col-md-5">
-                  <h3>Subscribe Newsletter</h3>
-                  </div>
-
-                  <div class="col-md-5 subcribemain">
-                  <div class="input-group">
-                   <input class="form-control input-lg Subscribetxt" placeholder="yourname@example.com" type="text">
-                      <span class="input-group-btn"><button class="btn btn-lg btn-primary Subscribebtn" type="button">Send</button></span>
-                     </div>              
-                  </div>
-                  <div class="col-md-1">
-                                    
-                                    </div>
-
-
-  </div>
-</div>
-</div>
-
- 
-                              
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--<div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3>Hello.</h3></div>
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-            dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-            Aliquam in felis sit amet augue.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3>Hello.</h3></div>
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-            dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-            Aliquam in felis sit amet augue.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3>Hello.</h3></div>
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
-            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
-            dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-            Aliquam in felis sit amet augue.
-            </div>
-          </div>
-        </div>-->
-   
-
-
-
-
-
-
-
-
-
-  	
-  
-   <div id="footer">
+  <div class="container">
     <div class="row">
-       <div class="col-md-1">
-                  
-        </div>
-       <div class="col-md-10">
-            <p class="copyright">Copyright © 2006-2014 Retail Master Pty. Ltd. trading as Feeling Sexy and Agape Hair Design ABN 93 153 569 389. All Rights Reserved. Use of this website constitutes acceptance of the Feeling Sexy User Agreement and Privacy Policy.</p>
+      
+      <h1 class="feelsexy">Feeling Sexy</h1>
+      <h4>Hottest Fragrance Store in Southern Hemisphere<h4>
+        <button class="btn btn-lg btn-primary feelsexy-button" type="button">Visit Our Store</button>
+
       </div>
-       <div class="col-md-1">
-                  
-        </div>
-       
-      </div>   
-       <div class="row">
-       <div class="col-md-5">
-                  
-        </div>
-       <div class="col-md-2">
-             <img class="img-thumbnail footer-image" src="img/facebook.png" width="10%">
-              <img class="img-thumbnail footer-image" src="img/g+.png" width="14%">
-              <img class="img-thumbnail footer-image" src="img/twitter.png" width="15%">
-      </div>
-       <div class="col-md-5">
-                  
-        </div>
-       
-      </div> 
     </div>
+  </div>
+
+  <!--Subcribe Section-->
+  <div class="Subcribe">
+    <div class="container">
+      <div class="row row-centered">
+        
+        <div class="col-md-5 col-centered">
+          <h3>Subscribe Newsletter</h3>
+                        </div>
+
+                        <div class="col-md-5 col-centered">
+                            <div class="input-group">
+                                <input class="form-control input-lg Subscribetxt" placeholder="yourname@example.com" type="text">
+                                <span class="input-group-btn"><button class="btn btn-lg btn-primary Subscribebtn" type="button">Send</button></span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
 
 
 
-	<!-- script references -->
-		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>-->
-    <script src="js/slide.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slide.js"></script>
+            <div id="footer">
+                <div class="row row-centered">
 
-    <script src="js/jquery.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   
-	</body>
+                    <div class="col-md-6 col-centered">
+                        <div class="copyright">Copyright © 2006-2014 Retail Master Pty. Ltd. trading as Feeling Sexy and Agape Hair Design ABN 93 153 569 389. All Rights Reserved.
+                            <br>Use of this website constitutes acceptance of the Feeling Sexy User Agreement and Privacy Policy.</p>
+
+
+                            <img class="img-thumbnail footer-image" src="img/facebook.png">
+                            <img class="img-thumbnail footer-image" src="img/gplus.png">
+                            <img class="img-thumbnail footer-image" src="img/twitter.png">
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#defaultForm').bootstrapValidator({
+                        message: 'This value is not valid',
+                        feedbackIcons: {
+                            valid: 'glyphicon glyphicon-ok',
+                            invalid: 'glyphicon glyphicon-remove',
+                            validating: 'glyphicon glyphicon-refresh'
+                        },
+                        fields: {
+
+
+                            itemnumber: {
+                                validators: {
+                                    notEmpty: {
+                                        message: 'Field cannot be empty, Please provide valid details.'
+                                    },
+                                    digits: {
+                                        message: 'Field cannot be empty, Please provide valid details.'
+                                    },
+                                    itnumber: {
+                                        country: 'US'
+                                    }
+                                }
+                            }
+
+                        }
+                    });
+                });
+            </script>
+
+
+
+</body>
+
 </html>
