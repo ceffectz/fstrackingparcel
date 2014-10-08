@@ -420,11 +420,11 @@ margin-bottom: 10px;*/
     width: 29%;
 }
 .glyphicon {
-    top: -35px;
-    padding-left: 200px;
+    top: -38px;
     color: #ff576e;
     font-weight: 100;
     font-size: 20px;
+    left: 228px;
 }
 .has-error .help-block,
 .has-error .control-label,
@@ -433,7 +433,7 @@ margin-bottom: 10px;*/
 .has-error .radio-inline,
 .has-error .checkbox-inline {
     color: #ff576e;
-    font-size: 11px;
+    font-size: 16px;
 }
 .help-block {
     margin-top: -9px;
@@ -493,4 +493,15 @@ label.css-label {
 }
 .input-lg {
     border: 1px solid #d5d5d5;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+.form-control {
+    display: table-row;
+    margin-top: -42px;
+}
+.Subscribebtn {
+    position: relative;
+    top: 10px;
 }
