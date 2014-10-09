@@ -207,6 +207,7 @@ hr.style-two {
 }
 .Subcribe h3 {
     font-size: 40px;
+    text-align: center;
 }
 .subcribemain {
     padding-top: 18px;
@@ -424,7 +425,7 @@ margin-bottom: 10px;*/
     color: #ff576e;
     font-weight: 100;
     font-size: 20px;
-    left: 228px;
+    left: 130px;
 }
 .has-error .help-block,
 .has-error .control-label,
@@ -434,9 +435,10 @@ margin-bottom: 10px;*/
 .has-error .checkbox-inline {
     color: #ff576e;
     font-size: 16px;
+    text-align: left;
 }
 .help-block {
-    margin-top: -9px;
+    /*  margin-top: -9px;*/
 }
 /*-------------------------radio button---------------------------*/
 
@@ -483,6 +485,9 @@ label.css-label {
 .row-centered {
     text-align: center;
 }
+.row-centered1 {
+    text-align: center;
+}
 .col-centered {
     display: inline-block;
     float: none;
@@ -496,12 +501,63 @@ label.css-label {
     width: 100%;
     position: relative;
     top: 10px;
+    margin-top: 10px;
 }
 .form-control {
     display: table-row;
-    margin-top: -42px;
+    /*margin-top: -42px;*/
 }
 .Subscribebtn {
     position: relative;
     top: 10px;
+    margin-top: 10px;
+}
+.bv-form .help-block {
+    margin-top: 15px;
+}
+.txtcenter {
+    position: relative;
+    left: 50px;
+}
+/*-------yellow color box----*/
+
+.divstyle {
+    border-bottom: 1px solid #f0f0f0;
+    color: #fff;
+    background-color: #fdc00f;
+    border-color: #fdc00f;
+    padding: 4px 15px;
+    line-height: 1.33;
+    border-radius: 0px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    float: right;
+    font-size: 18px;
+    text-align: center;
+}
+/*-------green color box----*/
+
+.divstyle-green {
+    border-bottom: 1px solid #2ea881;
+    color: #fff;
+    background-color: #2ea881;
+    border-color: #2ea881;
+    padding: 4px 15px;
+    line-height: 1.33;
+    border-radius: 0px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    float: right;
+    font-size: 18px;
+    text-align: center;
+}
+.errormsg {
+    margin-top: 0px;
+    margin-top: 17px !important;
+    color: rgb(139, 135, 135);
+    font-size: 16px;
+    text-align: left;
+}
+.textbox-btnmbview {
+    /*  width:30%;*/
 }

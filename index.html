@@ -7,19 +7,32 @@
     <title>Feeling Sexy - Track your Parcel</title>
     <meta name="generator" content="Feeling Sexy" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/bootstrapValidator.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mediaquary.css">
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrapValidator.js"></script>
     <script type="text/javascript" src="js/jspatch.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
 
+            $("#test1").click(function () {
+                $('.help-block').addClass('errormsg');
+            });
 
+            $("#removeClass").click(function () {
+                $('#paragraph1').removeClass('shaded');
+            });
+
+        });
+    </script>
 </head>
 
 <body>
@@ -53,7 +66,7 @@
                     <form class=" form-horizontal col-lg-12" id="defaultForm" action="ajaxSubmit.php" method="post">
 
                         <div class="container">
-                            <div class="row row-centered">
+                            <div class="row row-centered1">
 
                                 <div class="col-md-1 col-centered">
                                     <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" />
@@ -83,23 +96,64 @@
 
 
                         <div class="container">
-                            <div class="row row-centered">
+                            <div class="textbox-btn">
+                                <div class="col-xs-12 form-group">
+                                    <div class="col-xs-4"></div>
 
-                                <div class="col-md-3 col-centered ">
-                                    <div class="form-group ">
-                                        <input type="text" class="form-control cus-txt" name="itemnumber" placeholder="LVG0115552010223">
+                                    <div class="col-xs-3">
+                                        <div class="form-group ">
+                                            <input type="text" class="form-control cus-txt" name="itemnumber" placeholder="LVG0115552010223">
+                                        </div>
                                     </div>
+
+
+                                    <div class="col-xs-3">
+
+                                        <span class="input-group-btn"><button class="btn btn-lg btn-primary trackbtn" type="submit">Track</button></span>
+
+                                    </div>
+
+                                    <div class="col-xs-2"></div>
+
                                 </div>
-
-
-                                <div class="col-md-2 col-centered">
-
-                                    <span class="input-group-btn"><button class="btn btn-lg btn-primary trackbtn" type="submit">Track</button></span>
-
-                                </div>
-
                             </div>
+                            <!--textbox-btn-->
                         </div>
+                        <!--container-->
+
+                        <!--mobile view-->
+                        <div class="">
+                            <div class="textbox-btnmbview">
+                                <div class="row">
+
+                                    <div class="col-sm-3">
+
+
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group ">
+                                            <input type="text" class="form-control cus-txt" name="itemnumber" placeholder="LVG0115552010223">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-sm-3">
+
+                                        <span class="input-group-btn"><button class="btn btn-lg btn-primary trackbtn" type="submit">Track</button></span>
+
+                                    </div>
+                                    <div class="col-sm-3">
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--textbox-btn-->
+                        </div>
+                        <!--container-->
 
                     </form>
 
@@ -121,11 +175,13 @@
         <br>
     </div>
     <!--/container full-->
+
     <div class="bgcolor">
         <div class="container">
+            <!--/desktop view-->
             <div class="divcusrow">
                 <div class="row">
-                    
+
                     <div class="col-md-1 cuscol-md-1padding col-md-1cus">
                         <div class="">
                             <div class="iconmark">
@@ -221,6 +277,48 @@
             <!--divcusrow-->
 
 
+
+
+
+            <!--mobile-view-->
+            <div class="moblieview-orderprosess">
+                <div class="row">
+                    <div class="container">
+
+                        <div class="col-sm-3">
+                            <div class="ordprocesstest">
+                                <p>1<span class="ordprocesstest-span">Order Received</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="ordprocesstest">
+                                <p>2<span class="ordprocesstest-span">Packed and Dispatched</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="ordprocesstest">
+                                <p>3<span class="ordprocesstest-span">In Transit</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="ordprocesstest">
+                                <p>4<span class="ordprocesstest-span">Delivered</span> 
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--row-->
+                </div>
+                <!--container-->
+            </div>
+            <!--moblieview-orderprosess-->
+
+
+
             <!-- table-->
             <div class="row panel-bottom-line">
 
@@ -240,7 +338,20 @@
 
                                 <div class="col-md-5 col-md-2cus">
 
-                                    <button class="btn btn-lg btn-primary In-Transit-btn" type="button">In Transit</button>
+                                    <!--  <button class="btn btn-lg btn-primary In-Transit-btn" type="button">In Transit</button>-->
+
+                                    <div class=" col-md-3 divstyle">
+                                        In Transit
+                                    </div>
+                                    <!--<div class=" col-md-3 divstyle-green">
+                                    Order Received
+                                 </div>-->
+                                    <!--<div class=" col-md-3 divstyle-green">
+                                   Packed and Dispatched
+                                 </div>-->
+                                    <!--<div class=" col-md-3 divstyle-green">
+                                   Delivered
+                                 </div>-->
 
                                 </div>
 
@@ -623,25 +734,36 @@
   </div>
 
   <!--Subcribe Section-->
-  <div class="Subcribe">
+
+
+<div class="Subcribe">
     <div class="container">
-      <div class="row row-centered">
-        
-        <div class="col-md-5 col-centered">
-          <h3>Subscribe Newsletter</h3>
+        <div class="form-group">
+
+<div class="col-md-1"></div>
+            
+<div class="col-md-5">
+    <h3>Subscribe Newsletter</h3>
                         </div>
 
-                        <div class="col-md-5 col-centered">
+                        <div class="col-md-5">
                             <div class="input-group">
-                                <input class="input-lg Subscribetxt" placeholder="yourname@example.com" type="text">
-                                <span class="input-group-btn"><button class="btn btn-lg btn-primary Subscribebtn" type="button">Send</button></span>
+                                <form class="form-horizontal col-lg-12" id="emailForm" action="ajaxSubmit.php" method="post">
+                                    <div class="input-group">
+                                        <input class="form-control input-lg Subscribetxt" placeholder="yourname@example.com" type="text" name="email" id="email" />
+                                        <span class="input-group-btn"><button class="btn btn-lg btn-primary Subscribebtn" id="test1" type="submit">Send</button></span>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-
+                        <div class="col-md-1"></div>
 
                     </div>
                 </div>
             </div>
+
+
+
 
 
 
@@ -676,11 +798,11 @@
                 $(document).ready(function () {
                     $('#defaultForm').bootstrapValidator({
                         message: 'This value is not valid',
-                        feedbackIcons: {
-                            valid: 'glyphicon glyphicon-ok',
-                            invalid: 'glyphicon glyphicon-remove',
-                            validating: 'glyphicon glyphicon-refresh'
-                        },
+                        //feedbackIcons: {
+                        //valid: 'glyphicon glyphicon-ok',
+                        //invalid: 'glyphicon glyphicon-remove',
+                        //validating: 'glyphicon glyphicon-refresh'
+                        //},
                         fields: {
 
 
@@ -700,6 +822,52 @@
 
                         }
                     });
+                });
+            </script>
+
+            <!--email validation-->
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#emailForm')
+                        .bootstrapValidator({
+                            message: 'This value is not valid',
+                            //feedbackIcons: {
+                            //valid: 'glyphicon glyphicon-ok',
+                            //invalid: 'glyphicon glyphicon-exclamation-sign',
+                            //validating: 'glyphicon glyphicon-refresh'
+                            // },
+                            fields: {
+
+                                email: {
+                                    validators: {
+                                        notEmpty: {
+                                            message: 'Please provide your email'
+
+                                        },
+                                        emailAddress: {
+                                            message: 'The input is not a valid email address'
+
+                                        }
+                                    }
+                                },
+
+                            }
+                        })
+                        .on('success.form.bv', function (e) {
+                            // Prevent form submission
+                            e.preventDefault();
+
+                            // Get the form instance
+                            var $form = $(e.target);
+
+                            // Get the BootstrapValidator instance
+                            var bv = $form.data('bootstrapValidator');
+
+                            // Use Ajax to submit form data
+                            $.post($form.attr('action'), $form.serialize(), function (result) {
+                                console.log(result);
+                            }, 'json');
+                        });
                 });
             </script>
 
