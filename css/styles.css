@@ -1,3 +1,9 @@
+/**
+* @author  ceffectz
+* @version 1.1
+* @website www.ceffectz.com
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
  html,
 body {
@@ -201,13 +207,24 @@ hr.style-two {
     font-weight: 300;
     text-transform: uppercase;
 }
-.Subcribe {
+.subcribe {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.Subcribe h3 {
+.subcribe h3 {
     font-size: 40px;
-    text-align: center;
+}
+/*mobile*/
+
+.subcribemobile {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.subcribemobile h3 {
+    font-size: 30px;
+}
+.col-md-6cusmoblie {
+    padding-left: 7px !important;
 }
 .subcribemain {
     padding-top: 18px;
@@ -421,7 +438,7 @@ margin-bottom: 10px;*/
     width: 29%;
 }
 .glyphicon {
-    top: -38px;
+    top: -36px;
     color: #ff576e;
     font-weight: 100;
     font-size: 20px;
@@ -439,6 +456,7 @@ margin-bottom: 10px;*/
 }
 .help-block {
     /*  margin-top: -9px;*/
+    margin-top: -42px;
 }
 /*-------------------------radio button---------------------------*/
 
@@ -501,7 +519,6 @@ label.css-label {
     width: 100%;
     position: relative;
     top: 10px;
-    margin-top: 10px;
 }
 .form-control {
     display: table-row;
@@ -510,10 +527,9 @@ label.css-label {
 .Subscribebtn {
     position: relative;
     top: 10px;
-    margin-top: 10px;
 }
 .bv-form .help-block {
-    margin-top: 15px;
+    margin-top: -16px;
 }
 .txtcenter {
     position: relative;
@@ -557,7 +573,18 @@ label.css-label {
     color: rgb(139, 135, 135);
     font-size: 16px;
     text-align: left;
+    color: red;
 }
 .textbox-btnmbview {
     /*  width:30%;*/
+}
+.imgwidth {
+    width: 165px;
+    height: 165px;
+}
+.col-xs-03cuswidth {
+    width: 27%;
+}
+.subcribetxt-btn {
+    width: 93%;
 }
